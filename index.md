@@ -8,11 +8,11 @@ hero:
   tagline: Free. Open Source. Always surprises you with appalling new features. 🤯
   actions:
     - theme: brand
-      text: Introduction
-      link: /intro
-    - theme: alt
       text: Downloads
       link: /downloads
+    - theme: alt
+      text: Introduction
+      link: /intro
 
 features:
   - title: Frank__Wang
