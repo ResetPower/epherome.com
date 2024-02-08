@@ -3,16 +3,16 @@
 layout: home
 
 hero:
-  name: "Epherome"
-  text: "重新定义 Minecraft 启动."
-  tagline: 自由，开源，总是以骇人听闻的新特性震惊你。🤯
+  name: "Epherome。"
+  text: "Minecraft启动，让我们重新定义。"
+  tagline: 自由，开源，总是震惊世界的Epherome，总是给你带来不一样的新体验。🤯
   actions:
     - theme: brand
-      text: 简介
-      link: /zh-cn/intro
-    - theme: alt
       text: 下载
       link: /zh-cn/downloads
+    - theme: alt
+      text: 简介
+      link: /zh-cn/intro
 
 features:
   - title: Frank__Wang
