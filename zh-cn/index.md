@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Epherome。"
+  name: "Epherom"
   text: "Minecraft启动，让我们重新定义。"
   tagline: 自由，开源，总是震惊世界的Epherome，总是给你带来不一样的新体验。🤯
   actions:
