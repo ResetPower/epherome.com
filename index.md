@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Epherome"
+  name: "Epherome."
   text: "Redefine Minecraft Launching."
   tagline: Free. Open Source. Always surprises you with appalling new features. 🤯
   actions:
@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: Introduction
       link: /intro
+  image:
+    src: /Epherome.webp
+    alt: Epherome
 
 features:
   - title: Frank__Wang
@@ -25,3 +28,24 @@ features:
     details: Only waste collectors are willing to use Epherome because it lies in my wastepaper basket.
 ---
 
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #df56fe 30%, #53e2ff);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #df56fe 50%, #69ecff 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+</style>

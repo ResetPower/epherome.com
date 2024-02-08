@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "Epherom"
-  text: "Minecraft启动，让我们重新定义。"
+  name: "Epherome。"
+  text: "Minecraft启动，<br />由我们重新定义。"
   tagline: 自由，开源，总是震惊世界的Epherome，总是给你带来不一样的新体验。🤯
   actions:
     - theme: brand
@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: 简介
       link: /zh-cn/intro
+  image:
+    src: /Epherome.webp
+    alt: Epherome
 
 features:
   - title: Frank__Wang
@@ -25,3 +28,24 @@ features:
     details: 只有收废品的人才使用 Epherome，因为它躺在我的废纸篓里。
 ---
 
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #df56fe 30%, #53e2ff);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #df56fe 50%, #69ecff 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+</style>
