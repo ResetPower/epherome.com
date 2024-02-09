@@ -24,7 +24,11 @@ export default defineConfig({
         socialLinks: [
           { icon: 'github', link: 'https://github.com/ResetPower/Epherome' }
         ],
-        logo: { src: '/Epherome.svg', width: 24, height: 24 }
+        logo: { src: '/Epherome.svg', width: 24, height: 24 },
+        footer: {
+          message: 'Epherome Official Website',
+          copyright: `Copyright &copy; 2021-${new Date().getFullYear()} ResetPower`
+        }
       },
     },
     "zh-cn": {
@@ -48,7 +52,7 @@ export default defineConfig({
         ],
         footer: {
           message: 'Epherome 官方网站',
-          copyright: `版权所有 &copy; 2023-${new Date().getFullYear()} ResetPower`
+          copyright: `版权所有 &copy; 2021-${new Date().getFullYear()} ResetPower`
         },
         docFooter: {
           prev: '上一页',

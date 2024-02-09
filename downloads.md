@@ -58,13 +58,13 @@ You can go to [GitHub Releases](https://github.com/ResetPower/Epherome/releases)
         document.getElementById("EPHVERSION").innerHTML = "Newest Version: " + version;
         if (osName == "Unknown") {
             document.getElementById("Download").innerHTML = "Epherome";
-            document.getElementById("OSVERSION").innerHTML = "Epherome不支持您使用的设备"
+            document.getElementById("OSVERSION").innerHTML = "Epherome does not support the device you are using."
             document.getElementById("EPHVERSION").innerHTML = null
         }
         if ((userAgent.indexOf("iphone") >= 0) || (userAgent.indexOf("android") >= 0)) {
             document.getElementById("Download").innerHTML = "Epherome";
-            document.getElementById("OSVERSION").innerHTML = "很抱歉，Epherome不支持手机/平板使用";
-            document.getElementById("EPHVERSION").innerHTML = "若要下载，请访问下方Github Release界面或使用电脑访问";
+            document.getElementById("OSVERSION").innerHTML = "Sorry, Epherome is not supported for mobile/tablet use.";
+            document.getElementById("EPHVERSION").innerHTML = "Visit the Github Release below or use your computer to access to download Epherome.";
             document.getElementById("downloadButtonContainer").innerHTML = null
         }
     }

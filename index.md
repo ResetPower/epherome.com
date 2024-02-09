@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Epherome."
+  name: "Epherome"
   text: "Redefine Minecraft Launching."
   tagline: Free. Open Source. Always surprises you with appalling new features. 🤯
   actions:
