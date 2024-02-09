@@ -58,6 +58,9 @@ export default defineConfig({
           prev: '上一页',
           next: '下一页'
         },
+        outline: {
+          label: '页面导航'
+        },
         logo: { src: '/Epherome.svg', width: 24, height: 24 }
       },
     },
