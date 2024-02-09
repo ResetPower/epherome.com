@@ -14,7 +14,7 @@ hero:
       text: 简介
       link: /zh-cn/intro
   image:
-    src: /Epherome.webp
+    src: /Epherome.svg
     alt: Epherome
 
 features:

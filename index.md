@@ -14,7 +14,7 @@ hero:
       text: Introduction
       link: /intro
   image:
-    src: /Epherome.webp
+    src: /Epherome.svg
     alt: Epherome
 
 features:

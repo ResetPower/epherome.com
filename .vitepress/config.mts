@@ -12,7 +12,7 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Intro', link: '/intro' },
+          { text: 'Introduction', link: '/intro' },
           { text: 'Downloads', link: '/downloads' },
           { text: 'About', link: '/about' },
         ],
@@ -23,7 +23,8 @@ export default defineConfig({
         ],
         socialLinks: [
           { icon: 'github', link: 'https://github.com/ResetPower/Epherome' }
-        ]
+        ],
+        logo: { src: '/Epherome.svg', width: 24, height: 24 }
       },
     },
     "zh-cn": {
@@ -44,7 +45,16 @@ export default defineConfig({
         ],
         socialLinks: [
           { icon: 'github', link: 'https://github.com/ResetPower/Epherome' }
-        ]
+        ],
+        footer: {
+          message: 'Epherome 官方网站',
+          copyright: `版权所有 &copy; 2023-${new Date().getFullYear()} ResetPower`
+        },
+        docFooter: {
+          prev: '上一页',
+          next: '下一页'
+        },
+        logo: { src: '/Epherome.svg', width: 24, height: 24 }
       },
     },
   },
