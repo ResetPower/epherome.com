@@ -37,6 +37,7 @@
         },
         methods: {
             checkOperatingSystem(version) {
+                document.getElementById("downloadButtonContainer").innerHTML = null;
                 var osName = "Unknown";
                 var osVersion = "Unknown";
                 var userAgent = navigator.userAgent.toLowerCase();

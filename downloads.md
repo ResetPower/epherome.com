@@ -37,6 +37,7 @@ You can go to [GitHub Releases](https://github.com/ResetPower/Epherome/releases)
         },
         methods: {
             checkOperatingSystem(version) {
+                document.getElementById("downloadButtonContainer").innerHTML = null;
                 var osName = "Unknown";
                 var osVersion = "Unknown";
                 var userAgent = navigator.userAgent.toLowerCase();

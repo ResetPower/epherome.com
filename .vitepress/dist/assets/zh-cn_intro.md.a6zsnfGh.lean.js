@@ -1,0 +1,1 @@
+import{_ as e,c as a,o,V as t}from"./chunks/framework.GMzI5H4W.js";const u=JSON.parse('{"title":"什么是 Epherome？","description":"","frontmatter":{},"headers":[],"relativePath":"zh-cn/intro.md","filePath":"zh-cn/intro.md"}'),r={name:"zh-cn/intro.md"},n=t("",11),c=[n];function i(h,p,d,l,s,_){return o(),a("div",null,c)}const f=e(r,[["render",i]]);export{u as __pageData,f as default};
