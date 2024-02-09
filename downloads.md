@@ -60,7 +60,7 @@ You can go to [GitHub Releases](https://github.com/ResetPower/Epherome/releases)
                 }
                 document.getElementById("Download").innerHTML = "Epherome " + osName + " Version";
                 document.getElementById("OSVERSION").innerHTML = "System Requirements: " + osVersion;
-                document.getElementById("EPHVERSION").innerHTML = "Newest Version: " + version;
+                document.getElementById("EPHVERSION").innerHTML = "Latest Version: " + version;
                 if (osName == "Unknown") {
                     document.getElementById("Download").innerHTML = "Epherome";
                     document.getElementById("OSVERSION").innerHTML = "Epherome does not support the device you are using."
