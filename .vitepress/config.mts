@@ -61,6 +61,8 @@ export default defineConfig({
         outline: {
           label: '页面导航'
         },
+        sidebarMenuLabel: '菜单',
+        darkModeSwitchLabel: '主题',
         logo: { src: '/Epherome.svg', width: 24, height: 24 }
       },
     },
