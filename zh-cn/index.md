@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "Epherome"
-  text: "Minecraft 启动，<br />由我们重新定义。"
-  tagline: 自由，开源，总是震惊世界的 Epherome，总是给你带来不一样的新体验。🤯
+  text: "Minecraft启动，<br />由我们重新定义。"
+  tagline: 自由，开源，总是震惊世界的Epherome，总是给你带来不一样的新体验。🤯
   actions:
     - theme: brand
       text: 下载
@@ -31,7 +31,7 @@ features:
 <style>
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #df56fe 30%, #53e2ff);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, rgb(239, 184, 63) 25%, rgb(46, 175, 125) 50%, rgb(69, 120, 185) 75%);
 
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #df56fe 50%, #69ecff 50%);
   --vp-home-hero-image-filter: blur(44px);

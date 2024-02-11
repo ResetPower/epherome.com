@@ -61,9 +61,13 @@ export default defineConfig({
         outline: {
           label: '页面导航'
         },
+        logo: { src: '/Epherome.svg', width: 24, height: 24 },
+        langMenuLabel: '多语言',
+        returnToTopLabel: '回到顶部',
         sidebarMenuLabel: '菜单',
         darkModeSwitchLabel: '主题',
-        logo: { src: '/Epherome.svg', width: 24, height: 24 }
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式'
       },
     },
   },
