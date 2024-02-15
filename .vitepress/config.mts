@@ -13,13 +13,21 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/' },
           { text: 'Introduction', link: '/intro' },
+          { text: 'Contributing', link: '/contributing/' },
           { text: 'Downloads', link: '/downloads' },
           { text: 'About', link: '/about' },
         ],
         sidebar: [
           { text: 'What is Epherome?', link: '/intro' },
           { text: 'Downloads', link: '/downloads' },
-          { text: 'About', link: '/about' }
+          { text: 'About', link: '/about' },
+          {
+            text: 'Developer Documentation',
+            items: [
+              { text: 'Contributing', link: '/contributing/' },
+              { text: 'Translations', link: '/contributing/translations' }
+            ]
+          }
         ],
         socialLinks: [
           { icon: 'github', link: 'https://github.com/ResetPower/Epherome' }
