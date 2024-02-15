@@ -12,7 +12,7 @@ Epherome 使用 GitHub 作为其唯一的源代码管理、开发、协作和持
 
 Forking 后，您将拥有自己的 Repository `{username}/Epherome`，其内容与您 Fork 时 Epherome  Repository 的内容相同。**但是您需要手动与 Upstream repository 同步。**
 
-*Upstream Repository * 是指该 Repository  Fork 自的 Repository 。在本文档中，Upstream Repository 指的是 `ResetPower/Epherome`
+*Upstream Repository * 是指该 Repository Fork 自的 Repository 。在本文档中，Upstream Repository 指的是 `ResetPower/Epherome`
 
 您可以使用命令行 `git clone https://github.com/{username}/Epherome` 或者 `gh repo clone {username}/Epherome` 将 Repository 克隆到您的本地文件系统。
 
