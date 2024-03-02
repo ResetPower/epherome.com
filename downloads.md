@@ -4,7 +4,13 @@
 <p id="EPHVERSION"></p>
 <div id="downloadButtonContainer"></div>
 
-You can go to [GitHub Releases](https://github.com/ResetPower/Epherome/releases) to find all versions.
+You can go to [GitHub Releases](https://github.com/ResetPower/Epherome/releases) or [Phasmaruo Mirror](https://mirror.phasmaruo.com/epherome) to find all versions.
+
+::: tip Important
+>[Phasmaruo Mirror](https://mirror.phasmaruo.com) is a Release Mirror for SpiderKingWynn and his friends. This mirror effectively solves the problem that GitHub cannot be accessed in Mainland China.
+>
+>For Epherome, Phasmaruo Mirror is updated hourly, so head over to [GitHub Releases](https://github.com/ResetPower/Epherome/releases) for the fastest and most up-to-date version.
+:::
 
 ## System Requirements
 
@@ -27,7 +33,7 @@ You can go to [GitHub Releases](https://github.com/ResetPower/Epherome/releases)
 <script module>
     export default {
         mounted() {
-        fetch('https://api.github.com/repos/ResetPower/Epherome/releases')
+        fetch('https://mirror.phasmaruo.com/epherome/release.json')
             .then(response => response.json())
             .then(data => {
                 const htmlUrl = data[0].html_url;
@@ -44,19 +50,19 @@ You can go to [GitHub Releases](https://github.com/ResetPower/Epherome/releases)
                 if (userAgent.indexOf("win") >= 0) {
                     osName = "Windows";
                     osVersion = "Windows 10 and above (Windows 7 users must compile from <a href='https://github.com/ResetPower/Epherome' target='_blank'>source</a> according to the <a href='https://tauri.app/v1/guides/building/windows#supporting-windows-7' target='_blank'>Tauri documentation</a>)";
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_"+version+"_x86-setup.exe", "Download x86 Installer(.exe)");
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_"+version+"_x64-setup.exe", "Download x64 Installer(.exe)");
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_"+version+"_arm64-setup.exe", "Download arm64 Installer(.exe)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_"+version+"_x86-setup.exe", "Download x86 Installer(.exe)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_"+version+"_x64-setup.exe", "Download x64 Installer(.exe)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_"+version+"_arm64-setup.exe", "Download arm64 Installer(.exe)");
                 } else if (userAgent.indexOf("mac") >= 0) {
                     osName = "macOS";
                     osVersion = "macOS High Sierra (10.13) and above";
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_"+version+"_universal.dmg", "Download Universal Installer Image(.dmg)");
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_universal.app.tar.gz", "Download Universal Software(.app)")
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_"+version+"_universal.dmg", "Download Universal Installer Image(.dmg)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_universal.app.tar.gz", "Download Universal Software(.app)")
                 } else if (userAgent.indexOf("linux") >= 0) {
                     osName = "Linux";
                     osVersion = "Linux with webkit2gtk 4.0 (e.g. Ubuntu 18.04+), Linux Arm64 is not supported yet.";
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_"+version+"_amd64.deb", "Download amd64 Software Package(.deb)");
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_"+version+"_amd64.AppImage", "Download amd64 Common Software Package(.AppImage)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_"+version+"_amd64.deb", "Download amd64 Software Package(.deb)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_"+version+"_amd64.AppImage", "Download amd64 Common Software Package(.AppImage)");
                 }
                 document.getElementById("Download").innerHTML = "Epherome " + osName + " Version";
                 document.getElementById("OSVERSION").innerHTML = "System Requirements: " + osVersion;
