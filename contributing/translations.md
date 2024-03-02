@@ -31,4 +31,4 @@ export default {
 }
 ```
 
-In the file above, *language-name* is the name of the language in the language itself. For example, the *language-name* of Greece is `Ελληνικά`, while the *language-code* of Greece is `el-gr`.
+In the file above, *language-name* is the name of the language in the language itself. For example, the *language-name* of Greek is `Ελληνικά`, while the *language-code* of Greek is `el-gr`.

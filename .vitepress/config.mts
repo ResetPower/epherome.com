@@ -47,7 +47,7 @@ export default defineConfig({
         nav: [
           { text: '首页', link: '/zh-cn/' },
           { text: '简介', link: '/zh-cn/intro' },
-          { text: '开发文档', link: '/zh-cn/contributing/' },
+          { text: '贡献', link: '/zh-cn/contributing/' },
           { text: '下载', link: '/zh-cn/downloads' },
           { text: '关于', link: '/zh-cn/about' },
         ],
@@ -59,7 +59,7 @@ export default defineConfig({
             text: '开发者文档',
             items: [
               { text: '代码贡献', link: '/zh-cn/contributing/' },
-              { text: '本地化/国际化', link: '/zh-cn/contributing/translations' }
+              { text: '国际化', link: '/zh-cn/contributing/translations' }
             ]
           }
         ],
