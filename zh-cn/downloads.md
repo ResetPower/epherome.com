@@ -4,7 +4,13 @@
 <p id="EPHVERSION"></p>
 <div id="downloadButtonContainer"></div>
 
-前往 [GitHub Releases](https://github.com/ResetPower/Epherome/releases) 以取得全部版本的下载链接。
+前往 [GitHub Releases](https://github.com/ResetPower/Epherome/releases) 或 [Phasmaruo Mirror](https://mirror.phasmaruo.com/epherome) 以取得全部版本的下载链接。
+
+::: tip 重要提示
+>[Phasmaruo Mirror](https://mirror.phasmaruo.com) 是提供给SpiderKingWynn和他的朋友们的发行版镜像。此镜像有效的解决了GitHub在中国大陆无法访问的问题。
+>
+>对于 Epherome，Phasmaruo Mirror 采用的是每小时同步一次，所以请前往 [GitHub Releases](https://github.com/ResetPower/Epherome/releases) 以获取最快最新的版本。
+:::
 
 ## 操作系统要求
 
@@ -27,7 +33,7 @@
 <script module>
     export default {
         mounted() {
-        fetch('https://api.github.com/repos/ResetPower/Epherome/releases')
+        fetch('https://mirror.phasmaruo.com/epherome/release.json')
             .then(response => response.json())
             .then(data => {
                 const htmlUrl = data[0].html_url;
@@ -44,19 +50,19 @@
                 if (userAgent.indexOf("win") >= 0) {
                     osName = "Windows";
                     osVersion = "Windows 10 及以上（Windows 7 用户请自行从 <a href='https://github.com/ResetPower/Epherome/' target='_blank'>源代码</a> 参照 <a href='https://tauri.app/zh-cn/v1/guides/building/windows/#supporting-windows-7' target='_blank'>Tauri 官方文档</a> 进行编译使用）";
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_"+version+"_x86-setup.exe", "下载 x86 安装程序(.exe)");
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_"+version+"_x64-setup.exe", "下载 x64 安装程序(.exe)");
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_"+version+"_arm64-setup.exe", "下载 arm64 安装程序(.exe)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_"+version+"_x86-setup.exe", "下载 x86 安装程序(.exe)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_"+version+"_x64-setup.exe", "下载 x64 安装程序(.exe)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_"+version+"_arm64-setup.exe", "下载 arm64 安装程序(.exe)");
                 } else if (userAgent.indexOf("mac") >= 0) {
                     osName = "macOS";
                     osVersion = "macOS High Sierra (10.13) 及以上";
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_"+version+"_universal.dmg", "下载 Universal 安装映像(.dmg)");
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/Epherome_universal.app.tar.gz", "下载 Universal 软件(.app)")
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_"+version+"_universal.dmg", "下载 Universal 安装映像(.dmg)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/Epherome_universal.app.tar.gz", "下载 Universal 软件(.app)")
                 } else if (userAgent.indexOf("linux") >= 0) {
                     osName = "Linux";
                     osVersion = "含有webkit2gtk 4.0的Linux (如 Ubuntu 18.04+)，暂未支持Linux Arm64";
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/epherome_"+version+"_amd64.deb", "下载 amd64 软件包(.deb)");
-                    this.addDownloadButton("https://github.com/ResetPower/Epherome/releases/download/"+version+"/epherome_"+version+"_amd64.AppImage", "下载 amd64 通用软件包(.AppImage)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/epherome_"+version+"_amd64.deb", "下载 amd64 软件包(.deb)");
+                    this.addDownloadButton("https://mirror.phasmaruo.com/epherome/"+version+"/epherome_"+version+"_amd64.AppImage", "下载 amd64 通用软件包(.AppImage)");
                 }
                 document.getElementById("Download").innerHTML = "Epherome " + osName + "版";
                 document.getElementById("OSVERSION").innerHTML = "系统要求：" + osVersion;

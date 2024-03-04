@@ -22,7 +22,7 @@ You can use command line `git clone https://github.com/{username}/Epherome` or `
 - Use `npm install` to install required packages.
 - Use `npm run tauri dev` to run Epherome in development mode.
 
-Epherome uses Tauri as its backend. For more specific actions, you can refer to the Tauri documents.
+Epherome uses Tauri as its backend. For more specific actions, you can refer to the [Tauri documents](https://tauri.app/).
 
 After the steps above, you can start editing code.
 
@@ -34,7 +34,9 @@ After the steps above, you can start editing code.
 > You can try your best to follow the commit message guidelines. You can start by imitating Epherome commit messages.
 >
 > Specifically, a commit message should be written in the format `type(scope): <short summary>`.
+>
 > The short summary can be a noun, a symbol or a verb phrase. Note that any verbs should be in present tense.
+>
 > The scope can be omitted, just like Epherome does.
 >
 > But that **doesn't matter**, because the author can rewrite commit message when using *Squash and Merge*.
