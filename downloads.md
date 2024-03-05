@@ -4,7 +4,13 @@
 <p id="EPHVERSION"></p>
 <div id="downloadButtonContainer"></div>
 
-You can go to [GitHub Releases](https://github.com/ResetPower/Epherome/releases) to find all versions.
+You can go to [GitHub Releases](https://github.com/ResetPower/Epherome/releases) or [Phasmaruo Mirror](https://mirror.phasmaruo.com/epherome) to find all versions.
+
+::: tip
+[The Phasmaruo Mirror](https://mirror.phasmaruo.com) is a release mirror maintained by SpiderKingWynn and his friends. This mirror is set up for people who don't have access to GitHub or have a bad network connection to it.
+
+For Epherome, Phasmaruo Mirror is updated hourly, so head over to [GitHub Releases](https://github.com/ResetPower/Epherome/releases) for the most timely and most up-to-date version.
+:::
 
 ## System Requirements
 

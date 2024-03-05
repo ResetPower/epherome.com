@@ -4,6 +4,14 @@
 <p id="EPHVERSION"></p>
 <div id="downloadButtonContainer"></div>
 
+前往 [GitHub Releases](https://github.com/ResetPower/Epherome/releases) 或 [Phasmaruo Mirror](https://mirror.phasmaruo.com/epherome) 以取得全部版本的下载链接。
+
+::: tip
+[The Phasmaruo Mirror](https://mirror.phasmaruo.com) 是由 SpiderKingWynn 和他的朋友维护的发布镜像。该镜像为无法访问 GitHub 或访问速度极慢的人士准备。
+
+对于 Epherome， Phasmaruo Mirror 每小时更新一次，所以请尽可能前往 [GitHub Releases](https://github.com/ResetPower/Epherome/releases) 以获取最有时效性和最新的版本。
+:::
+
 前往 [GitHub Releases](https://github.com/ResetPower/Epherome/releases) 以取得全部版本的下载链接。
 
 ## 操作系统要求

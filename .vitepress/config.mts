@@ -49,11 +49,18 @@ export default defineConfig({
           { text: '简介', link: '/zh-cn/intro' },
           { text: '下载', link: '/zh-cn/downloads' },
           { text: '关于', link: '/zh-cn/about' },
+          { text: '贡献', link: '/zh-cn/contributing' },
         ],
         sidebar: [
           { text: '什么是 Epherome？', link: '/zh-cn/intro' },
           { text: '下载', link: '/zh-cn/downloads' },
-          { text: '关于', link: '/zh-cn/about' }
+          { text: '关于', link: '/zh-cn/about' },
+          {
+            text: '开发者文档',
+            items: [
+              { text: '贡献', link: '/zh-cn/contributing/' }
+            ]
+          }
         ],
         socialLinks: [
           { icon: 'github', link: 'https://github.com/ResetPower/Epherome' }
